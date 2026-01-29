@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Valentine?</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: white;
+            font-size: large;
+            background-color: pink;
+        }
+
+        img {
+            width: 250px;
+            margin: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="question">Can I be your Valentine?</h1>
+
+    <img id="valentine" src="valentine.jpeg">
+
+    <p id="message"></p>
+
+    <div id="buttons">
+        <button onclick="changeImage()">YES</button>
+        <button onclick="changeImage1()">NO</button>
+    </div>
+
+    <script>
+        function hide() {
+            document.getElementById("question").style.display = "none";
+            document.getElementById("buttons").style.display = "none";
+        }
+
+        function changeImage() {
+            document.getElementById("valentine").src = "kitty.jpeg";
+            document.getElementById("message").textContent = "YUPIIIII 💖";
+            hide();
+        }
+
+        function changeImage1() {
+            document.getElementById("valentine").src = "sadkitty.jpeg";
+            document.getElementById("message").textContent = "por favor?";
+            hide();
+        }
+    </script>
+
+</body>
+</html>
